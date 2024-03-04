@@ -1,0 +1,17 @@
+{
+    "aulas": [{
+        "professor": "professor 1",
+        "assunto": "calculo 1",
+        "alunos": ["lucas", "roberto", "joao", "gabriel"]
+    },
+    {
+        "professor": "professor 1",
+        "assunto": "calculo 1",
+        "alunos": ["vitor", "pedro", "tales", "paulo"]
+    },
+    {
+        "professor": "professor 1",
+        "assunto": "calculo 1",
+        "alunos": ["daniel", "diego", "matheus", "vasco"]
+    }]
+}
