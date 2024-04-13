@@ -5,7 +5,7 @@ class Motorista:
         self.corridas = corridas
         self.nota = nota
 
-    def get_info(self) -> dict:
+    def get_info(self):
         return {
             "corridas": [corrida.get_info() for corrida in self.corridas],
             "nota": self.nota

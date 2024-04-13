@@ -7,7 +7,7 @@ class Corrida:
         self.valor = valor
         self.passageiro = passageiro
 
-    def get_info(self) -> dict:
+    def get_info(self):
         return {
             "nota": self.nota,
             "distancia": self.distancia,

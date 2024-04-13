@@ -3,7 +3,7 @@ class Passageiro:
         self.nome = nome
         self.documento = documento
 
-    def get_info(self) -> dict:
+    def get_info(self):
         return {
             "nome": self.nome,
             "documento": self.documento
