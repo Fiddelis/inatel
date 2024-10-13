@@ -1,6 +1,35 @@
 /// <reference = cypress>
 
 describe("Testes da criação, registro e login", () => {
+    it.skip("Teste criação de usuario com sucesso", () => {
+        cy.visit('https://www.globalsqa.com/angularJs-protractor/registration-login-example/#/login')
+        cy.get('.btn-link').click()
+        cy.get('#firstName').type("Alexandre")
+        cy.get('#Text1').type("Alexandre")
+        cy.get('#username').type("Alexandre")
+        cy.get('#password').type("Alexandre")
+        cy.get('.btn-primary').click()
+        cy.get('.ng-binding').should("contain.text", "Registration successful")
+    })
+
+    it.skip("Teste criação de usuario com falha", () => {
+        cy.visit('https://www.globalsqa.com/angularJs-protractor/registration-login-example/#/login')
+        cy.get('.btn-link').click()
+        cy.get('#firstName').type("Alexandre")
+        cy.get('#Text1').type("Alexandre")
+        cy.get('#username').type("Alexandre")
+        cy.get('.btn-primary').should("be.disabled")
+    })
+
+    it.skip("Teste de login com sucesso", () => {
+        let infos = criarUser();
+        cy.visit('https://www.globalsqa.com/angularJs-protractor/registration-login-example/#/login')
+        cy.get('#username').type(infos[0])
+        cy.get('#password').type(infos[1])
+        cy.get('.btn-primary').click()
+        cy.get('h1.ng-binding').should("contain.text", infos[0])
+    })
+
     it("Teste de login com falha ao deletar usuario", () => {
         let infos = criarUser();
         cy.visit('https://www.globalsqa.com/angularJs-protractor/registration-login-example/#/login')
