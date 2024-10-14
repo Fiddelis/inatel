@@ -4,10 +4,10 @@ describe("Testes da criação, registro e login", () => {
     it.skip("Teste criação de usuario com sucesso", () => {
         cy.visit('https://www.globalsqa.com/angularJs-protractor/registration-login-example/#/login')
         cy.get('.btn-link').click()
-        cy.get('#firstName').type("Alexandre")
-        cy.get('#Text1').type("Alexandre")
-        cy.get('#username').type("Alexandre")
-        cy.get('#password').type("Alexandre")
+        cy.get('#firstName').type("Lucas Ruan")
+        cy.get('#Text1').type("Lucas Ruan")
+        cy.get('#username').type("Lucas Ruan")
+        cy.get('#password').type("Lucas Ruan")
         cy.get('.btn-primary').click()
         cy.get('.ng-binding').should("contain.text", "Registration successful")
     })
@@ -15,9 +15,9 @@ describe("Testes da criação, registro e login", () => {
     it.skip("Teste criação de usuario com falha", () => {
         cy.visit('https://www.globalsqa.com/angularJs-protractor/registration-login-example/#/login')
         cy.get('.btn-link').click()
-        cy.get('#firstName').type("Alexandre")
-        cy.get('#Text1').type("Alexandre")
-        cy.get('#username').type("Alexandre")
+        cy.get('#firstName').type("Lucas Ruan")
+        cy.get('#Text1').type("Lucas Ruan")
+        cy.get('#username').type("Lucas Ruan")
         cy.get('.btn-primary').should("be.disabled")
     })
 
