@@ -6,6 +6,7 @@
     "mochawesome-report-generator": "^6.2.0"
   },
   "dependencies": {
-    "cypress-mochawesome-reporter": "^3.8.2"
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "newman": "^6.2.1"
   }
 }
